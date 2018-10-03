@@ -23,7 +23,6 @@ class Triangle
     else
       TriangleError => error
       puts error.message
-      end
       raise TriangleError
     end
   end

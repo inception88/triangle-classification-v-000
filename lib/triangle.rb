@@ -21,9 +21,7 @@ class Triangle
     if @v12 > @v3 && @v13 > @v2 && @v23 > @v1
       @kind
     else
-      begin
-      raise TriangleError
-      rescue TriangleError => error
+      TriangleError => error
       puts error.message
       end
       raise TriangleError

@@ -13,12 +13,7 @@ class Triangle
   def kind
     if @v12 > @v3 && @v13 > @v2 && @v23 > @v1
     else
-      begin
       raise TriangleError
-      rescue TriangleError => error 
-      puts error.message
-      error.message
-      end
     end
     if @v1 == @v2 && @v2 == @v3
       @kind = :equilateral

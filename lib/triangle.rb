@@ -11,7 +11,7 @@ class Triangle
     if @v1 == @v2 && @v2 == @v3
       @kind = :equilateral
     elsif @v1 == @v2 || @v2 == @v3
-      @kind = :equilateral
+      @kind = :issosceles
     end
       
   end

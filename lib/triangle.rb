@@ -12,6 +12,7 @@ class Triangle
   
   def kind
     if @v12 > @v3 && @v13 > @v2 && @v23 > @v1
+    else
       begin
       raise TriangleError
       rescue TriangleError => error 

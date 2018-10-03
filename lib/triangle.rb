@@ -15,7 +15,7 @@ class Triangle
       begin
       raise TriangleError
       rescue TriangleError => error 
-      error.message
+      puts error.message
       end
     end
     if @v1 == @v2 && @v2 == @v3
@@ -30,7 +30,6 @@ class Triangle
   
   class TriangleError < StandardError
     def message
-      puts "This is a triangle inequslity error!"
       "This is a triangle inequslity error!"
     end
   end

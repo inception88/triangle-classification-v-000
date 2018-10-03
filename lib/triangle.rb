@@ -31,7 +31,7 @@ class Triangle
   
   class TriangleError < StandardError
     def message
-      "You raised a triangle Equality Error!"
+      "You raised a Triangle Equality Error!"
     end
   end
 end

@@ -25,6 +25,7 @@ class Triangle
       puts error.message
       error.message
       rescue TriangleError
+      end
   end
   
   class TriangleError < StandardError

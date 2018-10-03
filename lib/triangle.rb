@@ -1,5 +1,5 @@
 class Triangle
-  attr_accessor :equilateral, :isosceles, :scalene
+  attr_accessor :equilateral, :isosceles, :scalene, :kind
   
   def initialize(v1, v2, v3)
     @v1 = v1
@@ -9,6 +9,7 @@ class Triangle
   
   def kind 
     if @v1 == @v2 && v2 == @v3
+      @kind = 'equilateral'
       
   end
   

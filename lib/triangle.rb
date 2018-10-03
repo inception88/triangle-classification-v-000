@@ -7,7 +7,14 @@ class Triangle
     @v3 = v3
   end
   
-  def kind 
+  def kind
+    if 
+      begin
+      raise TriangleError
+      rescue TriangleError => error 
+      error.message
+      end
+    end
     if @v1 == @v2 && @v2 == @v3
       @kind = :equilateral
     elsif @v1 == @v2 || @v2 == @v3 || @v1 == @v3
@@ -18,7 +25,9 @@ class Triangle
       
   end
   
-  class TrangleError < StandardError
+  class TriangleError < StandardError
+    def message
+    end
   
   end
 end

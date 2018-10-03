@@ -26,8 +26,5 @@ class Triangle
   end
   
   class TriangleError < StandardError
-    def message
-      "This is a triangle inequality error!"
-    end
   end
 end

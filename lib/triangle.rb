@@ -12,7 +12,7 @@ class Triangle
       @kind = :equilateral
     elsif @v1 == @v2 || @v2 == @v3 || @v1 == @v3
       @kind = :isosceles
-    elsif @v1 !== @v2 && @v2 !== @v3 && @v1 !== @v3
+    elsif @v1 != @v2 && @v2 != @v3 && @v1 != @v3
       @kind = :scalene
     end
       

@@ -11,10 +11,6 @@ class Triangle
   end
   
   def kind
-    if @v12 > @v3 && @v13 > @v2 && @v23 > @v1
-    else
-      raise TriangleError
-    end
     if @v1 == @v2 && @v2 == @v3
       @kind = :equilateral
     elsif @v1 == @v2 || @v2 == @v3 || @v1 == @v3
@@ -22,7 +18,13 @@ class Triangle
     elsif @v1 != @v2 && @v2 != @v3 && @v1 != @v3
       @kind = :scalene
     end
-      
+    if @v12 > @v3 && @v13 > @v2 && @v23 > @v1
+    else
+      begin
+      raise TriangleError
+      puts error.message
+      error.message
+      rescue TriangleError
   end
   
   class TriangleError < StandardError

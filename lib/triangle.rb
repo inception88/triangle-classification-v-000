@@ -11,7 +11,7 @@ class Triangle
   end
   
   def kind
-    if @v1+@v2 !> @v3 && @v2 != @v3 && @v1 != @v3
+    if @v12 !> @v3 || @v13 !> @v2 || @v23 !> @v1
       begin
       raise TriangleError
       rescue TriangleError => error 

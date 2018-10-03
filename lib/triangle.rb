@@ -22,6 +22,7 @@ class Triangle
     else
       begin
       raise TriangleError
+      rescue TriangleError
       puts error.message
       end
     end

@@ -5,10 +5,13 @@ class Triangle
     @v1 = v1
     @v2 = v2
     @v3 = v3
+    @v12 = @v1+@v2
+    @v13 = @v1+@v3
+    @v23 = @v2+@v3
   end
   
   def kind
-    if 
+    if @v1+@v2 !> @v3 && @v2 != @v3 && @v1 != @v3
       begin
       raise TriangleError
       rescue TriangleError => error 

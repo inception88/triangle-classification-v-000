@@ -17,6 +17,7 @@ class Triangle
       raise TriangleError
       rescue TriangleError => error 
       puts error.message
+      error.message
       end
     end
     if @v1 == @v2 && @v2 == @v3

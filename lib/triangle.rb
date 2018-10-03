@@ -24,6 +24,7 @@ class Triangle
       raise TriangleError
       rescue TriangleError => error
       puts error.message
+      @kind = error
       end
     end
   end

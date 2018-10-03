@@ -31,6 +31,7 @@ class Triangle
   class TriangleError < StandardError
     def message
       puts "This is a triangle inequslity error!"
+      "This is a triangle inequslity error!"
     end
   end
 end
